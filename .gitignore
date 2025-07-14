@@ -31,6 +31,7 @@ local.properties
 # Jetpack Compose preview caches
 .idea/compose-preview/
 .idea/deploymentTargetDropDown.xml
+.idea/deploymentTargetSelector.xml
 
 # MacOS / Linux
 .DS_Store
