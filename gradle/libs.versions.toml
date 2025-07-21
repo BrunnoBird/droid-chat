@@ -84,3 +84,4 @@ kotlinSerialization = { id = "org.jetbrains.kotlin.plugin.serialization", versio
 compose-compiler = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
 hiltAndroid = { id = "com.google.dagger.hilt.android", version.ref = "hiltAndroid" }
 protoBuf = { id = "com.google.protobuf", version.ref = "protoBuf" }
+hotReload = { id = "org.jetbrains.compose.hot-reload", version = "1.0.0-beta04" }
