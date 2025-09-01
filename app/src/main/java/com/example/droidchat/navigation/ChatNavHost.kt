@@ -18,8 +18,10 @@ import com.example.droidchat.ui.feature.signup.SignUpRoute
 import com.example.droidchat.ui.feature.splash.SplashRoute
 
 @Composable
-fun ChatNavHost() {
-    val navController = rememberNavController()
+fun ChatNavHost(
+    navigationState: DroidChatNavigationState
+) {
+    val navController = navigationState.navController
     val activity = LocalContext.current as? Activity
 
     NavHost(navController = navController, startDestination = Route.SplashRoute) {

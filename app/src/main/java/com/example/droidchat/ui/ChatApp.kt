@@ -9,22 +9,27 @@ import androidx.compose.material3.Scaffold
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import com.example.droidchat.navigation.ChatNavHost
+import com.example.droidchat.navigation.rememberDroidChatNavigationState
 
 @Composable
 fun ChatApp() {
+    val navigationState = rememberDroidChatNavigationState()
+
     Scaffold(
         bottomBar = {
             // Vazio
         }
     ) { innerPaddings ->
         Box(
-           modifier = Modifier
-               .consumeWindowInsets(innerPaddings)
-               .padding(innerPaddings)
-               .imePadding()
-               .fillMaxSize()
+            modifier = Modifier
+                .consumeWindowInsets(innerPaddings)
+                .padding(innerPaddings)
+                .imePadding()
+                .fillMaxSize()
         ) {
-            ChatNavHost()
+            ChatNavHost(
+                navigationState = navigationState
+            )
         }
     }
 }

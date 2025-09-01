@@ -14,4 +14,10 @@ sealed interface Route {
 
     @Serializable
     object ChatsRoute
+
+    @Serializable
+    object UserRoute
+
+    @Serializable
+    object ProfileRoute
 }
